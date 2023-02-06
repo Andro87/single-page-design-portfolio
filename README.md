@@ -29,8 +29,8 @@ Users should be able to:
 
 ### Links
 
--   Solution URL: [Solution URL](https://github.com/Andro87/single-page-design-portfolio-project.git)
--   Live Site URL: [Live site URL ](https://single-page-design-portfolio-project.vercel.app/)
+-   Solution URL: [Solution URL](https://github.com/Andro87/single-page-design-portfolio.git)
+-   Live Site URL: [Live site URL ](https://single-page-design-portfolio-tan.vercel.app/)
 
 ## My process
 
