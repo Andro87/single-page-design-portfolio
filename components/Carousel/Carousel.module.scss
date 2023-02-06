@@ -1,0 +1,57 @@
+@use "styles/helpers" as *;
+
+.embla {
+    overflow: hidden;
+}
+.embla__viewport {
+    margin-block: 32px;
+    @include breakpoint($medium) {
+        margin-block: 56px;
+    }
+}
+
+.embla__container {
+    display: flex;
+    will-change: transform;
+    margin-left: -15px;
+    @include breakpoint($medium) {
+        margin-left: -30px;
+    }
+}
+.embla__slide {
+    position: relative;
+    flex: 0 0 auto;
+    width: 16.875rem; /*270px*/
+
+    display: flex;
+    overflow: hidden;
+    padding-left: 15px;
+    @include breakpoint($medium) {
+        padding-left: 30px;
+        width: 33.75rem; /*540px*/
+    }
+}
+.embla__slide_img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+.btn_container {
+    display: flex;
+    gap: 16px;
+    max-width: 9rem;
+    margin: auto;
+}
+.btn {
+    background-color: var(--black);
+    border-radius: 50%;
+    border: none;
+    width: 64px;
+    height: 64px;
+    cursor: pointer;
+    transition: all 0.3s ease-out;
+    &:hover,
+    &:focus {
+        background-color: var(--galactic-blue);
+    }
+}

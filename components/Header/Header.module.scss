@@ -1,0 +1,28 @@
+@use "styles/helpers" as *;
+
+.header_container {
+    padding-top: 16px;
+    @include padding;
+    @include breakpoint($medium) {
+        padding-top: 34px;
+        @include padding(medium);
+    }
+}
+.header_wrap {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    @include breakpoint($large) {
+        @include container;
+    }
+}
+
+.logo {
+    width: 48px;
+    height: auto;
+    @include breakpoint($medium) {
+        width: 64px;
+        height: auto;
+    }
+}

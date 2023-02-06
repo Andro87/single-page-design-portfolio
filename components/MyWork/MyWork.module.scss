@@ -1,0 +1,12 @@
+@use "styles/helpers" as *;
+
+.section_mywork_container {
+    text-align: center;
+    margin-block: 100px;
+    @include breakpoint($medium) {
+        margin-block: 120px;
+    }
+    @include breakpoint($large) {
+        margin-block: 88px;
+    }
+}

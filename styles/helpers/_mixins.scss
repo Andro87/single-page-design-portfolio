@@ -1,0 +1,24 @@
+@use "../helpers/breakpoints" as *;
+
+@mixin breakpoint($size) {
+    @media screen and (min-width: $size) {
+        @content;
+    }
+}
+
+//padding and margin
+
+@mixin padding($breakpoint: "small") {
+    @if $breakpoint== "medium" {
+        padding-inline: 40px;
+    } @else {
+        padding-inline: 16px;
+    }
+}
+
+//max-width for bigger devices
+
+@mixin container {
+    max-width: 68.75rem;
+    margin: auto;
+}

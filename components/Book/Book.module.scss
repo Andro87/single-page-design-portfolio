@@ -1,0 +1,42 @@
+@use "styles/helpers" as *;
+
+.section_book_container {
+    text-align: center;
+    @include padding;
+    @include breakpoint($medium) {
+        @include padding(medium);
+    }
+    @include breakpoint($large) {
+        text-align: initial;
+    }
+}
+.section_book_wrap {
+    background-color: var(--black);
+    border-radius: 10px;
+    color: var(--light-cream);
+    padding: 48px 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    @include breakpoint($medium) {
+        padding: 56px 75px;
+    }
+    @include breakpoint($large) {
+        @include container;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 80px 95px 80px 65px; /**/
+    }
+}
+.wrapper {
+    @include breakpoint($medium) {
+        max-width: 33.75rem;
+    }
+    p {
+        margin: 24px 0;
+        @include breakpoint($large) {
+            margin: initial;
+            margin-top: 25px;
+        }
+    }
+}
